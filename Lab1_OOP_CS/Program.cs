@@ -6,7 +6,7 @@ namespace Lab1_OOP_CS
     {
         static void Main(string[] args)
         {
-            Time time = new Time(0, 0, 0); //створення об'єкту із початковими параметрами
+            Time time = new Time(); //створення об'єкту 
             while (true)
             {
                 Console.WriteLine("виберіть операцію: " + //меню у безкінечному циклі
