@@ -4,11 +4,11 @@
     private int minutes;
     private int seconds;
 
-    public Time(int hours, int minutes, int seconds) //конструктор
+    public Time() //конструктор
     {
-        Hours = hours;
-        Minutes = minutes;
-        Seconds = seconds;
+        Hours = 0;
+        Minutes = 0;
+        Seconds = 0;
     }
 
     public int Hours //get set годин
@@ -63,42 +63,21 @@
     {
         Console.WriteLine("Введіть годину");
         int value = Convert.ToInt32(Console.ReadLine());
-        if (value >= 0 && value <= 24)
-        {
-            hours = value; 
-        }
-        else
-        {
-            Console.WriteLine("Помилка, введено не коректні дані");
-        }
+        Hours = value; 
     }
 
     public void SetMin() //функція зміни хвилин
     { 
         Console.WriteLine("Введіть хвилину");
         int value = Convert.ToInt32(Console.ReadLine());
-        if (value >= 0 && value <= 59)
-        {
-           minutes = value;
-        }
-        else
-        {
-            Console.WriteLine("Помилка, введено не коректні дані");
-        }
+        Minutes = value;
     }
 
     public void SetSec() //функція зміни секунд
     {
         Console.WriteLine("Введіть секунди");
         int value = Convert.ToInt32(Console.ReadLine());
-        if (value >= 0 && value <= 59)
-        {
-            seconds = value;
-        }
-        else
-        {
-            Console.WriteLine("Помилка, введено не коректні дані");
-        }
+        Seconds = value;
     }
 
     public void DisplayTime() // вивід поточної години
