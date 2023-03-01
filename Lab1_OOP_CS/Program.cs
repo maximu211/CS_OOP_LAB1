@@ -39,7 +39,7 @@ namespace Lab1_OOP_CS
             }
             catch (Exception)
             {
-                Console.WriteLine("Помилка");
+                Console.WriteLine("Помилка, неправильні параметри");
             }
         }
     }
